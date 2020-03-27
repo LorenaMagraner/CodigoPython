@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
+import json, sys
 import matplotlib.pyplot as plt
 #declarar funciones para + - x / y usarlas desde otra función general
 
 def suma(numeros):
     suma = sum(numeros)
     return  suma ## No se devuelve nada
-numeros = [1,2]   
+numeros = [1,2]
 print("programa terminado")
 
 
@@ -18,7 +19,7 @@ numeros = [4 ,3]
 print("programa terminado")
 
 
-def multiplicación (numeros): 
+def multiplicación (numeros):
 	multiplicación = multiply(numeros)
 	return multiplicación
 numeros =[2, 3]
@@ -87,7 +88,7 @@ df2 = pd.read_csv('texto_tarea.txt')
 
 df1 = pd.read_excel('tabla.xls', index_col = 0)
 columna_add = pd.Series([0,1,2,3], name ="columna_add")
-df3 = df1.append(columna_add) 
+df3 = df1.append(columna_add)
 
 
 
@@ -102,25 +103,3 @@ df4 = df3.to_excel('texto_tarea_toxls.xls')
 df1 = pd.read_excel('tabla.xls', index_col = 0)
 plt.plot("df1")  # así no es, es df1.plot()
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
