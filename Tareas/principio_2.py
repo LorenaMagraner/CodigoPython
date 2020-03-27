@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Prueba
 """
 Created on Wed Apr 19 19:08:13 2017
 
@@ -41,7 +42,7 @@ array = np.array([3,2,4,5])
 
 #concatenar arrays
 array2 = np.hstack((array,array)) #en eje cero
-array3 = np.vstack((array,array)) #en eje uno 
+array3 = np.vstack((array,array)) #en eje uno
 array4 = np.r_[array,array] #junta por filas
 array5 = np.c_[array, array] # junta por columnas
 
@@ -51,5 +52,3 @@ def Rastrigin_vect(x, An, A):
 
 x = np.array((1,3,5))
 print(Rastrigin_vect(x,10,10))
-
-
